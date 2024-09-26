@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Images</title>
+    <link rel="icon" href="../asset/logo/F1.svg" type="image/png">
+    <link rel="stylesheet" href="../CSS/manage-images.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Images</h1>
+        
+        <form id="add-image-form">
+            <input type="text" id="image-title" placeholder="Image Title" required>
+            <input type="text" id="image-src" placeholder="Image URL" required>
+            <textarea id="image-content" placeholder="Image Content" required></textarea>
+            <button type="submit" id="submit-btn">Add Image</button>
+        </form>
+
+        <ul id="image-list"></ul>
+
+        <button id="back-to-main" class="btn">Back to Main Page</button>
+    </div>
+
+    <script src="../JS/manage-images.js"></script>
+</body>
+</html>
