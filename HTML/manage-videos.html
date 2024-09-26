@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Videos</title>
+    <link rel="icon" href="../asset/logo/F1.svg" type="image/png">
+    <link rel="stylesheet" href="../CSS/manage-videos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Videos</h1>
+        <form id="video-form">
+            <input type="text" id="video-title" placeholder="Video Title" required>
+            <input type="text" id="video-url" placeholder="Video URL" required>
+            <input type="text" id="thumbnail-url" placeholder="Thumbnail URL" required>
+            <button type="submit" id="add-update-video-btn">Add Video</button>
+        </form>
+        <div id="video-list">
+            <!-- Existing videos will be displayed here -->
+        </div>
+    </div>
+
+    <a href="../index.html" id="back-to-home" class="btn">Back to Home</a>
+
+    <script src="../JS/manage-videos.js"></script>
+</body>
+</html>
