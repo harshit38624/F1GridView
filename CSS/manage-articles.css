@@ -1,0 +1,134 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Container for the entire page */
+.article-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Page title */
+.article-list h1 {
+    font-size: 2.5rem;
+    color: #ff0000;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+#article-form {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.form-group input[type="text"]::placeholder {
+    color: #999999;
+}
+
+.btn, button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none; /* Remove default border for buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.btn:hover, button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+
+
+/* Article container */
+#articles-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual article item */
+.article-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.article-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Article image */
+.article-item img {
+    width: 100%; /* Ensures the image takes up the full width of the container */
+    max-width: 400px; /* Set a maximum width to control size */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 250px; /* Set a maximum height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .article-list {
+        padding: 20px 10px;
+    }
+
+    #article-form {
+        padding: 15px;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+}
