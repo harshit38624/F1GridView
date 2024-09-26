@@ -1,0 +1,129 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Container for the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Page title */
+h1 {
+    font-size: 2.5rem;
+    color: #ff0000;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+#add-team-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#add-team-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input[type="text"]::placeholder {
+    color: #999999;
+}
+
+/* List of teams */
+#team-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Individual team item */
+#team-list li {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Team image */
+#team-list li img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+/* Buttons for editing and deleting */
+button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
