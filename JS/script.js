@@ -6,14 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageModal = document.getElementById('image-modal');
     const manageImagesBtn = document.getElementById('manage-images');
 
-    function syncScroll() {
-        const scrollPercentage = this.scrollTop / (this.scrollHeight - this.clientHeight);
-        const otherSide = this === leftSide ? rightSide : leftSide;
-        otherSide.scrollTop = scrollPercentage * (otherSide.scrollHeight - otherSide.clientHeight);
-    }
-
-    leftSide.addEventListener('scroll', syncScroll);
-    rightSide.addEventListener('scroll', syncScroll);
 
     // Load articles from local storage
     loadArticles();
